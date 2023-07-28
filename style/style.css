@@ -1,0 +1,525 @@
+:root {
+    --primary-color: #A82C48;
+    --secondry-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondry-font: 'Bungee Inline';
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-scrollbar {
+    position: fixed;
+    height: auto;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: var(--white-color);
+    transition: all .15s ease-in-out 0s;
+}
+
+.navmodal {
+    position: absolute;
+    top: 22%;
+    background: var(--white-color);
+    width: 100%;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+}
+
+.headermodal {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    line-height: 3;
+}
+
+.headera {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+    cursor: pointer;
+}
+
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Slider Section Start */
+.slider {
+    width: 100%;
+    background: url(/IMAGE/bg-1.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 16.875rem 0 9.375rem;
+}
+
+.slider h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondry-color);
+}
+
+.slider p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.whitebtn {
+    border: 0.1875rem solid #fff;
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: #fff;
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+}
+
+.whitebtn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+}
+
+/* Slider Section Start */
+
+/* Counter Section Start */
+.counter h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+/* Counter Section Finish */
+
+/* About Section Start */
+.about h2 {
+    color: var(--secondry-color);
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.about p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+.about ul li i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-right: 10px;
+
+}
+
+/* About Section Finish */
+
+/* Story Section Start */
+
+.section {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.text h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    line-height: 3rem;
+}
+
+.text p {
+    color: var(--text-color);
+}
+
+/* Story Section Finish */
+
+/* Explore Section Start */
+
+.explore-food {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.explore-food h2 {
+    color: var(--secondry-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    line-height: 3rem;
+}
+
+.explore-food p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.card h4 {
+    color: var(--secondry-color);
+    font-family: var(--secondry-font);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.card span del {
+    color: var(--text-gray);
+    margin-left: 0.5rem;
+}
+
+/* Explore Section Finish */
+
+/* Testominial Section Start */
+.testominial {
+    background-color: var(--primary-color);
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.testominial h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    bottom: -2.85rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 370px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0px;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+}
+
+.carousel-indicators button {
+    outline: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    margin-top: 3rem;
+    padding: 16rem 3.125rem 10rem 3.125px;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    transition: transform .6s ease-in-out;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    top: 0px;
+    padding-top: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+
+.carousel-item .carousel-caption p {
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 5% 0.625rem;
+    color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.carousel-item .carousel-caption h5 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Testominial Section Finish */
+
+
+/* FAQ Section Start */
+
+.faq {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.faq h2 {
+    color: var(--secondry-color);
+    font-family: var(--secondry-font);
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.faq h4 span {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    margin-right: 0.3125rem;
+}
+
+.faq h4 {
+    color: var(--secondry-color);
+    font-family: var(--secondry-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.faq p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+/* FAQ Section Finish */
+
+/* NewsLatter Section Start */
+
+.newslatter {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.newslatter h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    color: var(--secondry-color);
+    line-height: 3rem;
+}
+
+.faq p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.form-control {
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid var(--text-gray);
+    color: var(--black-color);
+    font-weight: 500;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:hover {
+    border: 0.1875rem solid var(--primary-color);
+}
+
+/* NewsLatter Section Finish */
+
+/* Book Section Start */
+.book-food{
+    width:100%;
+    background:linear-gradient(rgba(42, 41, 41, 0.338),rgba(42, 41, 41, 0.292)), url('../IMAGE/img-1.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:0 71.9125px;
+    padding:4.375rem 0
+  }
+  
+  .book-food h2{
+      font-size: 40px;
+      color: var(--white-color);
+      z-index: -1;
+}
+/* Book Section Finish */
+
+/* Footer Section Start */
+.footer {
+    background-color: var(--primary-color);
+}
+
+.footer .footer-link {
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+}
+
+.footer a i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.f-face {
+    font-size: 16px;
+    color: var(--white-color);
+    padding: 0 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+
+footer i{
+    font-size: 24px;
+    color: var(--white-color);
+    padding: 0 11px;
+}
+
+/* Footer Section Finish */
